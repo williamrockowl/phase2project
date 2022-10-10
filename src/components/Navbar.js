@@ -7,17 +7,17 @@ function Navbar() {
     <div className="navbar">
       <ul className="nav-links">
         <li>
-          <Link to="/">
+          <Link className="nav-link" to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/toys">
+          <Link className="nav-link" to="/toys">
             Toys
           </Link>
         </li>
         <li>
-          <Link to="/about">
+          <Link className="nav-link" to="/about">
             About
           </Link>
         </li>
