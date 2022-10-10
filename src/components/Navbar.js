@@ -1,6 +1,6 @@
-import React from 'react'
-import "../styles/navbar.css"
-import { Link } from "react-router-dom"
+import React from "react";
+import "../styles/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -23,7 +23,7 @@ function Navbar() {
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
