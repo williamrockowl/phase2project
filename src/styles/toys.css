@@ -5,3 +5,13 @@
 .toys-img {
   max-width: 200px;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form-container > input {
+  max-width: 300px;
+}

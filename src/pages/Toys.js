@@ -5,15 +5,15 @@ import "../styles/toys.css"
 function Toys() {
   const [toys, setToys] = useState([])
 
+  const [name, setName] = useState("")
+  const [likes, setLikes] = useState(0)
+  const [image, setImage] = useState("")
+
   useEffect(() => {
     fetch('http://localhost:3000/toys', configObj)
       .then(res => res.json())
       .then(data => setToys(data))
   }, [])
-
-  useEffect(() => {
-    console.log(toys)
-  }, [toys])
 
  const configObj = {
   method: 'GET',
@@ -22,7 +22,7 @@ function Toys() {
 
   return (
     <div>
-      <Form />
+      <Form name={name} likes={likes} image={image} setName={setName} setLikes={setLikes} setImage={setImage} />
       {toys.map((toy) => (
         <div key={toy.id} className="toy-container">
           <p>ID: {toy.id}</p>
