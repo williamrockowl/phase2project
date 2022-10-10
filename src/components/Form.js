@@ -31,7 +31,9 @@ function Form(props) {
         onChange={(e) => props.setImage(e.target.value)}
         required
       />
-      <button type="submit" onClick={props.handleForm}>Add toy</button>
+      <button type="submit" onClick={props.handleForm}>
+        Add toy
+      </button>
     </form>
   );
 }

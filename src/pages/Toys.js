@@ -20,22 +20,27 @@ function Toys() {
     headers: { "Content-Type": "application/json" },
   };
 
- const configObjPost = {
-  method: 'POST',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({
-    name: name,
-    likes: likes,
-    image: image
-  })
- }
- 
- const handleForm = (e) => {
-    e.preventDefault()
-    fetch('http://localhost:3000/toys', configObjPost)
-     .then(res => res.json())
-     .then(data => console.log(data)) 
-  }
+  const configObjPost = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: name,
+      likes: likes,
+      image: image,
+    }),
+  };
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    fetch("http://localhost:3000/toys", configObjPost)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
+
+  fetch('http://localhost:3000/movies', configObj)
+ .then(res => res.json())
+ .then(data => addMovie(data)) //THIS STATE UPDATE IS REQUIRED!!!
+ // clear form
 
   return (
     <div>
