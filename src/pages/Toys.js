@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Form from "../components/Form.js"
 import "../styles/toys.css"
 
 function Toys() {
@@ -18,15 +19,16 @@ function Toys() {
   method: 'GET',
   headers: {'Content-Type': 'application/json'}
  }
- 
+
   return (
     <div>
+      <Form />
       {toys.map((toy) => (
-        <div className="toy-container">
+        <div key={toy.id} className="toy-container">
           <p>ID: {toy.id}</p>
           <p>Name: {toy.name}</p>
-          <img className="toys-img" src={toy.image} />
           <p>Likes: {toy.likes}</p>
+          <img className="toys-img" src={toy.image} />
         </div>
       ))}
     </div>

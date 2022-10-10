@@ -2,7 +2,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <h1>Toy Story Database</h1>
+    <h1>
+      Toy Story Database
+    </h1>
   )
 }
 
