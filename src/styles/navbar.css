@@ -1,4 +1,14 @@
 .navbar {
   height: 80px;
-  background-color: red;
+  padding: 24px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.nav-links > li {
+  list-style-type: none;
 }
