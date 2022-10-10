@@ -30,15 +30,20 @@ function Toys() {
     }),
   };
 
-  const handleForm = (e) => {
+  async function handleForm(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/toys", configObjPost)
+
+    await fetch("http://localhost:3000/toys", configObjPost)
       .then((res) => res.json())
       .then((data) => addToy(data));
-  };
 
-  function addToy(newToy){
-    setToys([...toys, newToy])
+    setName("");
+    setLikes(0);
+    setImage("");
+  }
+
+  function addToy(newToy) {
+    setToys([...toys, newToy]);
   }
 
   return (

@@ -2,8 +2,8 @@ import Home from "./pages/Home";
 import Toys from "./pages/Toys";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./app.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./app.css";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;
