@@ -34,13 +34,12 @@ function Toys() {
     e.preventDefault();
     fetch("http://localhost:3000/toys", configObjPost)
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => addToy(data));
   };
 
-  fetch('http://localhost:3000/movies', configObj)
- .then(res => res.json())
- .then(data => addMovie(data)) //THIS STATE UPDATE IS REQUIRED!!!
- // clear form
+  function addToy(newToy){
+    setToys([...toys, newToy])
+  }
 
   return (
     <div>
