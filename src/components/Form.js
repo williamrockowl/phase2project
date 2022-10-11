@@ -16,7 +16,7 @@ function Form(props) {
       <label htmlFor="likes">Likes</label>
       <input
         type="number"
-        placeholder="Enter number of likes"
+        placeholder="Enter the number of likes"
         id="likes"
         value={props.likes}
         onChange={(e) => props.setLikes(e.target.value)}
@@ -32,7 +32,7 @@ function Form(props) {
         required
       />
       <button type="submit" onClick={props.handleForm}>
-        Add toy
+        Add a Toy
       </button>
     </form>
   );
