@@ -10,9 +10,31 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
+  border-style: solid;
 }
 
-.form-container > input,
+.form-container > input {
+  background-color: white ;
+  max-width: 600px;
+  width: 100%;
+  padding: 12px 40px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
 .form-container > button {
-  max-width: 300px;
+  background-color: lightgreen ;
+  max-width: 100px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+* {
+  text-align: center;
 }
