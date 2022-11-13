@@ -1,7 +1,7 @@
 import React from "react";
 
 function Home() {
-  return <h1>Toy Story Database</h1>;
+  return <h1>Drag N Drop Toys</h1>;
 }
 
 export default Home;
